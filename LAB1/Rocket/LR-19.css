@@ -1,0 +1,576 @@
+@font-face {
+  font-family: Rubik Mono One;
+  src: url(./fonts/RubikMonoOne-Regular.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body,
+html {
+  overflow-x: hidden;
+}
+body {
+  font-family: "Rubic Mono One";
+}
+header {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: #220142;
+}
+nav {
+  width: 100vw;
+
+  font-size: 18px;
+}
+.conteiner {
+  min-width: calc(100vw - 645px);
+  margin: 0 auto;
+}
+.nav_interface ul li a {
+  color: #fff;
+  text-align: center;
+  font-family: Rubik Mono One;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.98px;
+  text-decoration: none;
+}
+.nav_interface ul li:first-child a {
+  color: #f98513;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+  font-family: Rubik Mono One;
+}
+.main_content {
+  padding-top: 176px;
+  padding-bottom: 177px;
+  display: flex;
+  justify-content: center;
+  gap: 127px;
+  width: 100vw;
+  align-items: center;
+  background: #2e0458;
+}
+.rocket {
+  width: 551px;
+  height: 547px;
+}
+.main_content h1 {
+  color: white;
+  font-family: Rubik Mono One;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 7.04px;
+}
+.main_content h1 span {
+  color: #f98513;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 10.56px;
+}
+main {
+  background-color: #220142;
+}
+.planets {
+  display: flex;
+  justify-content: center;
+  gap: 58px;
+  width: 100vw;
+  padding-top: 100px;
+  background-color: #220142;
+  padding-bottom: 100px;
+}
+.card {
+  padding-top: 37px;
+  padding-bottom: 98px;
+  width: 600px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: #2e0458;
+  box-shadow: 5px 5px 10px 0px #411370;
+  text-align: center;
+  gap: 26px;
+}
+.card img {
+  width: 287px;
+  flex-shrink: 0;
+  margin: 0 auto;
+}
+.card p {
+  width: 488px;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: Rubik Mono One;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.98px;
+  text-align: left;
+  margin: 0 auto;
+}
+.card h1 {
+  flex-shrink: 0;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 26px;
+}
+.first_h1 {
+  color: #d282ee;
+  text-align: center;
+  text-shadow: 2px 2px 10px #a896d3;
+  font-family: Rubik Mono One;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 16px;
+  padding-top: 26px;
+}
+.second_h1 {
+  color: #f98513;
+  text-align: center;
+  text-shadow: 2px 2px 10px #f48213;
+  font-family: Rubik Mono One;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 16px;
+  padding-bottom: 26px;
+  padding-top: 26px;
+}
+.earth {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #2e0458;
+  width: 100vw;
+  padding-bottom: 120px;
+}
+.picture img {
+  width: 660px;
+  height: 661px;
+  flex-shrink: 0;
+}
+.earth {
+  padding-top: 119px;
+  padding-bottom: 119px;
+}
+.text h2 {
+  width: 600px;
+  text-align: center;
+  color: #00d5f5;
+  text-align: center;
+  text-shadow: 2px 2px 10px #55e9ff;
+  font-family: Rubik Mono One;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 16px;
+  margin-bottom: 26px;
+}
+.text p {
+  margin: 0;
+  width: 600px;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: Rubik Mono One;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.98px;
+}
+.text span {
+  color: #a896d3;
+  font-family: Rubik Mono One;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.98px;
+  text-decoration-line: underline;
+}
+
+footer .info {
+  padding-top: 68px;
+  padding-bottom: 68px;
+  width: 100vw;
+  background-color: #220142;
+  text-align: center;
+}
+footer p {
+  color: #705ea9;
+  font-family: Rubik Mono One;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.54px;
+  margin: 0px;
+}
+footer p:first-child {
+  padding-bottom: 30px;
+}
+#button {
+  color: white;
+}
+#button:hover {
+  color: #f98513;
+}
+[href] {
+  text-decoration: none;
+  color: inherit;
+}
+.mercury {
+  transition: 1s;
+}
+.mercury:hover {
+  transform: scale(1.15);
+}
+.venera {
+  transition: 4s;
+}
+.venera:hover {
+  transform: rotateZ(1080deg);
+}
+ul {
+  max-width: 1920px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+.button {
+  color: #fff;
+  text-align: center;
+  font-family: Rubik Mono One;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.98px;
+  text-decoration: none;
+}
+.button:hover {
+  color: #f98513;
+}
+#burger {
+  display: none;
+}
+@media (min-width: 768px) and (max-width: 1405px) {
+  #rocket {
+    width: 33vw;
+    height: 33vw;
+  }
+  .main_content h1 {
+    font-size: 4.7vw;
+  }
+  .main_content h1 span {
+    font-size: 7vw;
+  }
+  .main_content {
+    gap: 10vw;
+  }
+  .planets {
+    flex-direction: column;
+    gap: 100px;
+  }
+  .card {
+    width: 70vw;
+    height: 60vw;
+    margin: 0 auto;
+  }
+  .card img {
+    width: 30vw;
+    height: 30vw;
+  }
+  .card p {
+    margin: 0 auto;
+    font-size: 1.8vw;
+    width: 30em;
+  }
+  .first_h1 {
+    font-size: 3.5vw;
+    margin: 0 auto;
+  }
+  .second_h1 {
+    font-size: 3.5vw;
+    margin: 0 auto;
+  }
+  .earth {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .earth img {
+    padding-top: 70px;
+    width: 25em;
+    height: 25em;
+  }
+  .text h2 {
+    width: 15em;
+    font-size: 2em;
+  }
+  .earth p {
+    margin: 0 auto;
+    width: 33em;
+    font-size: 1.5vw;
+  }
+  .text p span {
+    font-size: 1em;
+  }
+  .text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .nav_interface ul li a {
+    font-size: 1.7vw;
+  }
+  .footer a {
+    font-size: 100px;
+  }
+  [href] {
+    font-size: 1.5vw;
+  }
+  .picture img {
+    width: 40vw;
+    height: 40vw;
+  }
+  #burger {
+    display: none;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  ul {
+    display: none;
+  }
+  #burger {
+    display: flex;
+    width: 10vw;
+    float: right;
+    padding: 0 40px 0 0;
+  }
+  header {
+    padding: 30px 0;
+  }
+  .nav_interface {
+    height: 10vw;
+    padding: 0;
+  }
+  .main_content {
+    flex-direction: column-reverse;
+    gap: 70px;
+    padding: 125px 0;
+  }
+  .main_content h1 {
+    font-size: 8vw;
+  }
+  .main_content h1 span {
+    font-size: 8vw;
+  }
+  #rocket {
+    width: 70vw;
+  }
+  .planets {
+    flex-direction: column;
+    gap: 100px;
+  }
+  .card {
+    padding-top: 25px;
+    width: 80vw;
+    height: 70vw;
+    margin: 0 auto;
+  }
+  .card img {
+    width: 40vw;
+    height: 40vw;
+  }
+  .card h1 {
+    padding-top: 0;
+  }
+  .card p {
+    margin: 0 auto;
+    font-size: 2.3vw;
+    width: 30em;
+  }
+  .first_h1 {
+    font-size: 3.5vw;
+    margin: 0 auto;
+  }
+  .second_h1 {
+    padding-top: 0;
+    font-size: 3.5vw;
+    margin: 0 auto;
+  }
+  .venera:hover {
+    transform: none;
+  }
+  .mercury:hover {
+    transform: none;
+  }
+  .earth {
+    flex-direction: column;
+    padding: 50px 0;
+  }
+  .earth img {
+    width: 70vw;
+    height: auto;
+  }
+  .picture {
+    margin: 0 auto;
+  }
+  .earth h2 {
+    margin: 0 auto;
+  }
+  .earth p {
+    width: 90vw;
+    font-size: 1em;
+    margin: 0 auto;
+  }
+  .earth p span {
+    font-size: 1em;
+    text-decoration: none;
+  }
+  .text h2 {
+    padding-bottom: 40px;
+  }
+  footer .info {
+    padding: 34px 0;
+  }
+}
+@media (min-width: 320px) and (max-width: 576px) {
+  ul {
+    display: none;
+  }
+  #burger {
+    display: flex;
+    width: 10vw;
+    float: right;
+    padding: 0 40px 0 0;
+  }
+  header {
+    padding: 15px 0;
+  }
+  .nav_interface {
+    height: 10vw;
+    padding: 0;
+  }
+  .main_content {
+    flex-direction: column-reverse;
+    gap: 70px;
+    padding: 75px 0;
+  }
+  .main_content h1 {
+    font-size: 8vw;
+  }
+  .main_content h1 span {
+    font-size: 8vw;
+  }
+  #rocket {
+    width: 70vw;
+  }
+  .planets {
+    padding-top: 50px;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .card {
+    padding-top: 25px;
+    width: 80vw;
+    height: 70vw;
+    margin: 0 auto;
+  }
+  .card img {
+    width: 40vw;
+    height: 40vw;
+  }
+  .card h1 {
+    padding-top: 0;
+    letter-spacing: 0.1em;
+  }
+  .card h2 {
+    letter-spacing: 0.1em;
+  }
+  .card p {
+    margin: 0 auto;
+    font-size: 2.5vw;
+    width: 27em;
+    letter-spacing: 0.2em;
+  }
+  .first_h1 {
+    font-size: 5vw;
+    margin: 0 auto;
+  }
+  .second_h1 {
+    padding-top: 0;
+    font-size: 5vw;
+    margin: 0 auto;
+  }
+  .venera:hover {
+    transform: none;
+  }
+  .mercury:hover {
+    transform: none;
+  }
+  .earth {
+    flex-direction: column;
+    padding: 0 0 40px 0;
+  }
+  .earth img {
+    width: 70vw;
+    height: auto;
+  }
+  .picture {
+    margin: 0 auto;
+  }
+  .earth h2 {
+    margin: 0 auto;
+  }
+  .earth p {
+    width: 90vw;
+    font-size: 1em;
+    margin: 0 auto;
+  }
+  .earth p span {
+    font-size: 1em;
+    text-decoration: none;
+  }
+  .text h2 {
+    padding-bottom: 40px;
+  }
+  footer .info {
+    padding: 34px 0;
+  }
+  .planets {
+    padding-bottom: 50px;
+  }
+  .text h2 {
+    font-size: 10vw;
+    letter-spacing: 0.1em;
+    margin: 0 auto;
+    width: 5em;
+  }
+  .text p {
+    font-size: 3vw;
+  }
+  .info a {
+    font-size: 3vw;
+  }
+  footer p:first-child {
+    padding-bottom: 20px;
+  }
+  footer .info {
+    padding: 20px 0;
+  }
+}

@@ -1,0 +1,19 @@
+.box {
+  background: green;
+  width: 100px;
+  height: 100px;
+  float: inline-start;
+  margin-left: 10px;
+}
+@media screen and (min-width: 800px) {
+  .box {
+    width: 15vw;
+    height: 15vw;
+  }
+}
+@media screen and (max-width: 799px) {
+  .box {
+    float: none;
+    margin-top: 10px;
+  }
+}

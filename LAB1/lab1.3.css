@@ -1,0 +1,31 @@
+.box {
+  background: green;
+  width: 15vw;
+  height: 20vw;
+  float: inline-start;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+@media screen and (max-width: 500px) and (orientation: portrait) {
+  .first_p {
+    display: none;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 800px) {
+  .conteiner {
+    width: 100vw;
+    height: 100vw;
+  }
+  .box {
+    width: 40vw;
+    height: 40vw;
+    float: inline-start;
+  }
+}
+@media screen and (max-width: 479px) {
+  .box {
+    float: none;
+    width: 25vw;
+    height: 25vw;
+  }
+}
