@@ -13,19 +13,19 @@
 }
 @media screen and (min-width: 480px) and (max-width: 800px) {
   .conteiner {
-    width: 100vw;
+    width: 50vw;
     height: 100vw;
   }
   .box {
-    width: 40vw;
-    height: 40vw;
+    width: 20vw;
+    height: 20vw;
     float: inline-start;
   }
 }
 @media screen and (max-width: 479px) {
   .box {
     float: none;
-    width: 25vw;
-    height: 25vw;
+    width: 20vw;
+    height: 20vw;
   }
 }
