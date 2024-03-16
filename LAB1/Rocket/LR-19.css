@@ -354,6 +354,7 @@ ul {
     display: none;
   }
   #burger {
+    display: block;
     width: 10vw;
     float: right;
     padding: 0 40px 0 0;
@@ -449,6 +450,10 @@ ul {
 @media (min-width: 320px) and (max-width: 576px) {
   ul {
     display: none;
+  }
+  .card img {
+    width: 40vw;
+    height: 40vw;
   }
   #burger {
     display: flex;

@@ -1,0 +1,26 @@
+div {
+  display: flex;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.flex1 {
+  justify-content: space-between;
+  gap: 10px;
+}
+.flex2 {
+  justify-content: start;
+  gap: 10px;
+}
+.flex3 {
+  gap: 10px;
+  justify-content: end;
+}
+.flex4 {
+  gap: 10px;
+  justify-content: center;
+}
+.flex5 {
+  flex-direction: column;
+}
