@@ -15,24 +15,30 @@
     <button type="button" class="btn btn-success btn-sm">Success</button>
     <button type="button" class="btn btn-danger btn-lg">Danger</button>
     <br />
+    <br />
     <div
       class="btn-group border"
       role="group"
       aria-label="Группа кнопок с вложенным раскрывающимся списком"
     >
-      <button type="button" class="btn border">1</button>
-      <button type="button" class="btn border">2</button>
-      <div class="btn-group" role="group">
+      <button type="button" class="btn border-end">1</button>
+      <button type="button" class="btn border-end">2</button>
+      <div class="btn-group">
         <button
-          id="btnGroupDrop1"
           type="button"
           class="btn dropdown-toggle"
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
-          Выпадающая кнопка
+          Action
         </button>
-        <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1"></ul>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+          <li><hr class="dropdown-divider" /></li>
+          <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
       </div>
     </div>
     <br />
@@ -57,9 +63,9 @@
       aria-describedby="passwordHelpBlock"
       placeholder="Введите пароль"
     />
-    <!-- On tables -->
+    <br />
     <table class="table table-light">
-      <tr class="border-2">
+      <tr class="border-bottom border-black">
         <th>Лабораторная работа №1</th>
         <th>Лабораторная работа №2</th>
         <th>Лабораторная работа №3</th>
@@ -74,29 +80,26 @@
         <td>Ячейка</td>
         <td>Ячейка</td>
       </tr>
-      <tr>
-        <td class="bg-info">Ячейка</td>
-        <td class="bg-info">Ячейка</td>
-        <td class="bg-info">Ячейка</td>
+      <tr class="table-secondary">
+        <td>Ячейка</td>
+        <td>Ячейка</td>
+        <td>Ячейка</td>
       </tr>
-      <tr>
+      <tr class="border-bottom border-black">
         <th>Ужас</th>
         <th>Легкотня</th>
         <th>Что это?</th>
       </tr>
     </table>
     <br />
-    <!-- Button trigger modal -->
     <button
       type="button"
       class="btn btn-primary"
       data-bs-toggle="modal"
       data-bs-target="#staticBackdrop"
     >
-      Launch static backdrop modal
+      Модальное окно
     </button>
-
-    <!-- Modal -->
     <div
       class="modal fade"
       id="staticBackdrop"
@@ -109,9 +112,7 @@
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="staticBackdropLabel">
-              Modal title
-            </h1>
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Название</h1>
             <button
               type="button"
               class="btn-close"
