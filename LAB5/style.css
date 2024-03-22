@@ -3,6 +3,7 @@ div {
   margin-bottom: 50px;
   height: 50px;
 }
+
 a {
   text-decoration: none;
   color: black;
@@ -11,35 +12,37 @@ a {
   background: beige;
   justify-content: space-between;
   gap: 10px;
+  align-items: center;
 }
 .flex2 {
   background: beige;
   justify-content: start;
   gap: 10px;
+  align-items: center;
 }
 .flex3 {
   background: beige;
   gap: 10px;
   justify-content: end;
+  align-items: center;
 }
 .flex4 {
   background: beige;
   gap: 10px;
   justify-content: center;
+  align-items: center;
 }
 .flex5 {
-  height: 110px;
+  height: 130px;
   background: beige;
   align-content: start;
   flex-direction: column;
 }
 .flex6 {
   background: beige;
-  justify-content: end;
+  justify-content: space-between;
   gap: 10px;
-}
-.flex6__P {
-  flex-grow: 1;
+  align-items: center;
 }
 .chessboard {
   display: flex;
@@ -93,7 +96,7 @@ a {
   background: green;
 }
 .third > div:last-child {
-  flex-basis: 400px;
+  flex-basis: 100%;
 }
 .fourth {
   margin-top: 100px;
@@ -108,21 +111,6 @@ img {
 }
 .fourth > div:first-child {
   flex-basis: 300px;
-}
-.fifth {
-  width: 175px;
-  flex-wrap: wrap;
-  height: 165px;
-  gap: 10px;
-  align-content: start;
-}
-.fifth > div {
-  margin-bottom: 0;
-  width: 50px;
-  background: blue;
-}
-.fifth > div:nth-child(2) {
-  height: 100px;
 }
 .last {
   display: flex;
@@ -145,4 +133,55 @@ img {
 .last > div:last-child {
   flex: 2 0;
   background: purple;
+}
+
+
+
+
+.fifth {
+  width: 175px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 165px;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.fifth > div {
+  margin-bottom: 0;
+  width: 50px;
+  background: blue;
+}
+.fifth > div:nth-child(3) {
+  flex-basis: 100px;
+}
+
+
+
+
+
+
+.flex_6ul {
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  gap: 10px;
+}
+.ul_1 {
+  padding-left: 0;
+  width: 100%;
+  justify-content: space-between;
+}
+.ul_2 {
+  padding-left: 0;
+  justify-content: start;
+}
+.ul_3 {
+  justify-content: end;
+}
+.ul_4 {
+  justify-content: center;
+}
+.ul_5 {
+  flex-direction: column;
+  gap: 0;
 }
