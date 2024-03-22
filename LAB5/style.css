@@ -1,0 +1,148 @@
+div {
+  display: flex;
+  margin-bottom: 50px;
+  height: 50px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.flex1 {
+  background: beige;
+  justify-content: space-between;
+  gap: 10px;
+}
+.flex2 {
+  background: beige;
+  justify-content: start;
+  gap: 10px;
+}
+.flex3 {
+  background: beige;
+  gap: 10px;
+  justify-content: end;
+}
+.flex4 {
+  background: beige;
+  gap: 10px;
+  justify-content: center;
+}
+.flex5 {
+  height: 110px;
+  background: beige;
+  align-content: start;
+  flex-direction: column;
+}
+.flex6 {
+  background: beige;
+  justify-content: end;
+  gap: 10px;
+}
+.flex6__P {
+  flex-grow: 1;
+}
+.chessboard {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 450px;
+  height: 450px;
+}
+.chessboard > div:nth-child(odd) {
+  background-color: black;
+}
+.chessboard > div {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 0;
+}
+.second {
+  width: 98vw;
+  height: 600px;
+  justify-content: space-around;
+}
+.second > div {
+  width: 100px;
+  height: 100px;
+  background: green;
+}
+.second > div:first-child,
+.second > div:last-child {
+  align-self: end;
+}
+.second > div:nth-child(2n) {
+  align-self: center;
+}
+.third {
+  width: 400px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 0px;
+  flex-wrap: wrap;
+}
+.third > div {
+  margin-bottom: 0;
+  flex-basis: 35px;
+  background: yellow;
+}
+.third > div:nth-child(8) {
+  flex-grow: 1;
+}
+.third > div:first-child,
+.third > div:last-child {
+  background: green;
+}
+.third > div:last-child {
+  flex-basis: 400px;
+}
+.fourth {
+  margin-top: 100px;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 400px;
+  border: 1px solid black;
+}
+img {
+  width: 75px;
+  height: 75px;
+}
+.fourth > div:first-child {
+  flex-basis: 300px;
+}
+.fifth {
+  width: 175px;
+  flex-wrap: wrap;
+  height: 165px;
+  gap: 10px;
+  align-content: start;
+}
+.fifth > div {
+  margin-bottom: 0;
+  width: 50px;
+  background: blue;
+}
+.fifth > div:nth-child(2) {
+  height: 100px;
+}
+.last {
+  display: flex;
+  width: 50vw;
+  height: 50px;
+  border: 1px solid black;
+}
+.last > div:first-child {
+  background-color: yellow;
+  flex: 0 7em;
+}
+.last > div:nth-child(2) {
+  background: orange;
+  flex: 0 2 7em;
+}
+.last > div:nth-child(3) {
+  background: red;
+  flex: 1 0;
+}
+.last > div:last-child {
+  flex: 2 0;
+  background: purple;
+}
