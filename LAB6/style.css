@@ -219,19 +219,23 @@ textarea:focus {
 }
 .contacts {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   padding-bottom: 180px;
+  gap: 200px;
 }
 .card_info {
   display: flex;
-  gap: 200px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .card {
   display: flex;
-  gap: 5px;
+  justify-content: start;
+  flex-basis: 30em;
+  transition-duration: 2s;
 }
 .card > img {
+  align-self: flex-start;
   width: 30px;
   padding-right: 10px;
 }
