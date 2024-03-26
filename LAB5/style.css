@@ -135,16 +135,12 @@ img {
   background: purple;
 }
 
-
-
-
 .fifth {
   width: 175px;
   flex-direction: column;
   flex-wrap: wrap;
   height: 165px;
   justify-content: space-between;
-  align-content: space-between;
 }
 .fifth > div {
   margin-bottom: 0;
@@ -154,11 +150,6 @@ img {
 .fifth > div:nth-child(3) {
   flex-basis: 100px;
 }
-
-
-
-
-
 
 .flex_6ul {
   display: flex;
