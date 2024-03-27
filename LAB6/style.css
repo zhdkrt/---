@@ -175,6 +175,9 @@ h3 {
   letter-spacing: 0%;
   text-align: left;
 }
+[type="text"]:focus::-webkit-input-placeholder {
+  color: transparent;
+}
 textarea {
   max-width: 505px;
   min-height: 246px;
@@ -182,6 +185,9 @@ textarea {
   border: 1px solid rgb(221, 221, 221);
   background: rgba(196, 196, 196, 0);
   resize: none;
+}
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
 }
 textarea::placeholder {
   color: rgb(172, 169, 169);
@@ -204,6 +210,7 @@ textarea:focus {
   letter-spacing: 0%;
   text-align: left;
 }
+
 [type="submit"] {
   width: 235px;
   height: 65px;
@@ -231,7 +238,7 @@ textarea:focus {
 .card {
   display: flex;
   justify-content: start;
-  flex-basis: 30em;
+  flex-basis: 25em;
   transition-duration: 2s;
 }
 .card > img {
