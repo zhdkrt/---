@@ -28,9 +28,6 @@ a {
   min-width: calc(100vw - 160px);
   margin: 0 auto;
 }
-.header_info {
-  padding-left: 80px;
-}
 .info {
   color: rgb(87, 78, 86);
   font-family: Lora;
@@ -39,7 +36,7 @@ a {
   line-height: 102px;
   letter-spacing: 0%;
   text-align: left;
-  padding: 263px 200px 0 77px;
+  padding: 263px 200px 0 0;
 }
 .field {
   color: rgb(87, 78, 86);
@@ -49,7 +46,6 @@ a {
   line-height: 15px;
   letter-spacing: 6%;
   text-align: left;
-  padding-left: 77px;
 }
 .header_img {
   width: auto;
@@ -58,7 +54,8 @@ a {
 .header_content {
   background: rgb(249, 248, 246);
   display: flex;
-  gap: 395px;
+  justify-content: space-evenly;
+  gap: 10vw;
 }
 .img_2 {
   width: 237px;
@@ -116,11 +113,32 @@ h2 {
   width: 530px;
   height: 580px;
 }
+.play {
+  background: rgb(246, 213, 167);
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  position: absolute;
+  top: 140px;
+  right: 250px;
+  z-index: 10;
+}
+.in_play {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: 30px;
+  left: 32px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid white;
+}
+
 .text {
   align-self: center;
   color: rgb(255, 255, 255);
   font-family: Roboto;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0%;
@@ -154,10 +172,9 @@ h3 {
   box-sizing: border-box;
   border: 1px solid rgb(221, 221, 221);
   background: rgba(196, 196, 196, 0);
-}
-[type="text"]::placeholder {
   padding-left: 19px;
-  color: rgb(172, 169, 169);
+  padding-left: 19px;
+  color: black;
   font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
@@ -165,9 +182,8 @@ h3 {
   letter-spacing: 0%;
   text-align: left;
 }
-[type="text"]:focus {
-  padding-left: 19px;
-  color: black;
+[type="text"]::placeholder {
+  color: rgb(172, 169, 169);
   font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
@@ -179,15 +195,29 @@ h3 {
   color: transparent;
 }
 textarea {
-  max-width: 505px;
-  min-height: 246px;
+  width: 505px;
+  height: 245px;
   box-sizing: border-box;
   border: 1px solid rgb(221, 221, 221);
   background: rgba(196, 196, 196, 0);
   resize: none;
+  padding-left: 19px;
+  padding-top: 27px;
+  padding-left: 19px;
+  color: black;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
 }
 textarea:focus::-webkit-input-placeholder {
-  color: transparent;
+  opacity: 0;
+}
+textarea:default {
+  padding-left: 19px;
+  padding-top: 27px;
 }
 textarea::placeholder {
   color: rgb(172, 169, 169);
@@ -197,8 +227,6 @@ textarea::placeholder {
   line-height: 24px;
   letter-spacing: 0%;
   text-align: left;
-  padding-left: 19px;
-  padding-top: 27px;
 }
 textarea:focus {
   padding-left: 19px;
@@ -209,6 +237,7 @@ textarea:focus {
   line-height: 24px;
   letter-spacing: 0%;
   text-align: left;
+  padding-top: 27px;
 }
 
 [type="submit"] {
