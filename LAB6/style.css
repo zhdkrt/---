@@ -342,6 +342,10 @@ textarea:focus {
   .img_2 {
     padding-left: 0;
   }
+  .main_content > img {
+    width: 45vw;
+    height: auto;
+  }
 }
 @media (max-width: 1024px) {
   .contacts {
