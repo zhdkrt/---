@@ -29,6 +29,7 @@ a {
   margin: 0 auto;
 }
 .info {
+  width: min-content;
   color: rgb(87, 78, 86);
   font-family: Lora;
   font-size: 80px;
@@ -52,6 +53,10 @@ a {
   height: auto;
 }
 .header_info {
+  display: flex;
+  justify-content: space-between;
+}
+.header_info > section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -170,7 +175,7 @@ h3 {
   padding-left: 160px;
   padding-bottom: 91px;
 }
-.input {
+.input form {
   display: flex;
   flex-direction: column;
   gap: 19px;
@@ -294,8 +299,8 @@ textarea:focus {
   flex-direction: column;
   justify-content: space-between;
 }
-.card section > h4,
-.card section > p {
+.card div > span,
+.card div > p {
   color: rgb(87, 78, 86);
   font-family: Roboto;
   font-size: 16px;
@@ -304,7 +309,7 @@ textarea:focus {
   letter-spacing: 6%;
   text-align: left;
 }
-.card section > h4 {
+.card div > span {
   text-transform: uppercase;
   padding-bottom: 6px;
 }
@@ -325,7 +330,7 @@ textarea:focus {
   .header_content {
     gap: 3vw;
   }
-  .input {
+  .input form {
     padding-left: 5vw;
   }
   .contacts {
@@ -405,6 +410,7 @@ textarea:focus {
     padding-left: 5vw;
   }
   .info {
+    width: 100%;
     padding-top: 50px;
     text-align: center;
   }
@@ -454,6 +460,7 @@ textarea:focus {
   h1,
   h2,
   h3 {
+    width: 50%;
     padding: 50px 0;
     text-align: center;
   }
@@ -481,23 +488,31 @@ textarea:focus {
     padding-left: 0;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 576px) {
   .main_content {
     padding-left: 0;
+  }
+  .header_info {
+    flex-direction: column;
   }
   .main_content > img {
     width: 80vw;
     height: auto;
   }
   h1 {
+    width: 50%;
     padding-left: 0;
     text-align: center;
   }
   h2 {
-    padding-left: 0;
+    color: rgb(87, 78, 86);
+    width: 100%;
+    padding: 20px 0;
     text-align: center;
   }
   h3 {
+    color: white;
+    width: 100%;
     padding-left: 0;
     text-align: center;
     padding-top: 50px;
