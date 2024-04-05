@@ -390,7 +390,7 @@ textarea:focus {
     text-align: justify;
   }
   .play {
-    right: 40px;
+    vertical-align: middle;
   }
   textarea,
   [type="text"] {
@@ -443,8 +443,9 @@ textarea:focus {
     padding-bottom: 10px;
   }
   .play {
-    top: 35%;
-    left: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .main_content > img {
     width: 75vw;
