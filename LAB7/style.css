@@ -61,7 +61,7 @@ button > span {
   letter-spacing: 0%;
   text-align: left;
 }
-.main__content {
+.main-content {
   background-image: url(/LAB7/img/First.png);
   width: 100vw;
   height: 100vh;
@@ -80,7 +80,7 @@ h1 {
   letter-spacing: 0%;
   text-align: left;
 }
-.main__content p {
+.main-content p {
   opacity: 0.6;
   width: 458px;
   padding-left: 230px;
@@ -93,7 +93,7 @@ h1 {
   letter-spacing: 0%;
   text-align: left;
 }
-.main__content > button {
+.main-content > button {
   border-radius: 5px;
   background: rgb(201, 69, 59);
   border: none;
@@ -112,7 +112,7 @@ h2 {
   line-height: 140%;
   letter-spacing: 0%;
 }
-.main__cards p {
+.main-cards p {
   width: 100vw;
   color: #000000;
   font-family: Roboto;
