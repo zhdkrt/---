@@ -16,7 +16,7 @@ nav {
   justify-content: space-evenly;
 }
 nav > span,
-footer > span {
+footer .container > span {
   align-self: center;
   color: rgb(0, 0, 0);
   font-family: Ribeye;
@@ -129,10 +129,25 @@ h2 {
   gap: 31px;
 }
 .card {
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
   width: 360px;
   height: 500px;
   display: flex;
   flex-direction: column;
+}
+.card:hover {
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background: rgb(255, 255, 255);
+  width: 360px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.08);
 }
 .card p {
   color: rgb(0, 0, 0);
@@ -152,6 +167,7 @@ h3 {
   line-height: 150%;
   letter-spacing: 0%;
   text-align: center;
+  padding-top: 35px;
 }
 footer {
   background: rgba(38, 148, 153, 0.04);
