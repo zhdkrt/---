@@ -16,59 +16,87 @@
     <header class="header">
       <div class="container">
         <nav class="navbar">
-          <span class="logo">Trevland</span>
-          <ul class="list">
-            <li><a href="">Home</a></li>
-            <li><a href="">Location</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
+          <span class="navbar__logo">Trevland</span>
+          <ul class="navbar-menu">
+            <li class="navbar-menu__item">
+              <a class="navbar-menu__item-link" href="">Home</a>
+            </li>
+            <li class="navbar-menu__item">
+              <a class="navbar-menu__item-link" href="">Location</a>
+            </li>
+            <li class="navbar-menu__item">
+              <a class="navbar-menu__item-link" href="">Blog</a>
+            </li>
+            <li class="navbar-menu__item">
+              <a class="navbar-menu__item-link" href="">About</a>
+            </li>
+            <li class="navbar-menu__item">
+              <a class="navbar-menu__item-link" href="">Contact</a>
+            </li>
           </ul>
-          <button class="button"><span>Booking now</span></button>
+          <button class="button navbar__button button_dander">
+            <span class="navbar__button-text">Booking now</span>
+          </button>
         </nav>
       </div>
     </header>
     <main class="main">
       <div class="container">
-        <div class="main-content">
-          <h1 class="title">Railtrips To Here, There And Everywhere!</h1>
-          <p class="subtitle">
+        <div class="main-poster">
+          <h1 class="main-poster__title">
+            Railtrips To Here, There And Everywhere!
+          </h1>
+          <p class="main-poster__description">
             We all wish to start our year the best way possible and also
             according to a common belief if you have a great start to your.
           </p>
-          <button class="main-button"><span>Booking now</span></button>
+          <button class="button main-poster__button button_danger">
+            <span class="main-poster__button-text">Booking now</span>
+          </button>
         </div>
-        <div class="main-cards">
-          <h2>Popular Location</h2>
-          <p>
+        <div class="text-content">
+          <h2 class="text-content__title">Popular Location</h2>
+          <p class="text-content__description">
             For every one of us, travel came first. We’ve spent years living as
             nomads, pioneers, and <br />
             voyagers— from island hopping in the
           </p>
-          <section class="cards">
-            <div class="card">
-              <img src="/LAB7/img/image 45.png" alt="" />
-              <div>
-                <h3 class="card-title">Istanbul, Turkey</h3>
-                <p class="card-subtitle">
+          <section class="content">
+            <div class="card card_hover">
+              <img
+                class="card__image"
+                src="/LAB7/img/image 45.png"
+                alt="Каппадокия"
+              />
+              <div class="card__info">
+                <h3 class="card__info-title">Istanbul, Turkey</h3>
+                <p class="card__info-description">
                   Istanbul is a major city in Turkey that straddles Europe.
                 </p>
               </div>
             </div>
-            <div class="card">
-              <img src="/LAB7/img/image 47.png" alt="" />
-              <div>
-                <h3 class="card-title">Kuala Lumpur, malaysia</h3>
-                <p class="card-subtitle">
+            <div class="card card_hover">
+              <img
+                class="card__image"
+                src="/LAB7/img/image 47.png"
+                alt="Хэдон Ёнгунса"
+              />
+              <div class="card__info">
+                <h3 class="card__info-title">Kuala Lumpur, malaysia</h3>
+                <p class="card__info-description">
                   A 272-step long trek leads you to this century.
                 </p>
               </div>
             </div>
-            <div class="card">
-              <img src="/LAB7/img/image 48.png" alt="" />
-              <div>
-                <h3 class="card-title">Seoul, South Korea</h3>
-                <p class="card-subtitle">
+            <div class="card card_hover">
+              <img
+                class="card__image"
+                src="/LAB7/img/image 48.png"
+                alt="Batu Caves"
+              />
+              <div class="card__info">
+                <h3 class="card__info-title">Seoul, South Korea</h3>
+                <p class="card__info-description">
                   South Korea officially the Republic of Korea is a country in
                   East Asia.
                 </p>
@@ -80,7 +108,7 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <span class="logo">Trevland</span>
+        <span class="footer__logo">Trevland</span>
       </div>
     </footer>
   </body>
