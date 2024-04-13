@@ -15,8 +15,7 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
-.navbar__logo,
-.footer__logo {
+.logo {
   align-self: center;
   color: rgb(0, 0, 0);
   font-family: Ribeye;
@@ -44,15 +43,11 @@ body {
 .navbar-menu__item {
   list-style-type: none;
 }
-.navbar__button {
-  width: 163px;
-  height: 51px;
+button {
+  padding: 14px 35px;
   border-radius: 5px;
   background: rgb(201, 69, 59);
   border: none;
-}
-.navbar__button-text,
-.main-poster__button-text {
   text-align: center;
   color: rgb(255, 255, 255);
   font-family: Roboto;
@@ -62,14 +57,19 @@ body {
   letter-spacing: 0%;
   text-align: left;
 }
+.button_big {
+  margin-left: 230px;
+}
 .main-poster {
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(/LAB7/img/First.png);
   width: 100vw;
   height: 100vh;
   background-size: 100vw;
+  background-repeat: no-repeat;
 }
+
 .main-poster__title {
   padding-top: 181px;
   padding-left: 230px;
@@ -130,6 +130,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 31px;
+  flex-wrap: wrap;
 }
 .card {
   box-sizing: border-box;
