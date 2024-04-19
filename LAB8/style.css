@@ -1,0 +1,105 @@
+.task1 {
+  display: grid;
+  grid-template-columns: 50px 100px 20px 300px;
+  grid-template-rows: 100px 100px 100px 100px 100px;
+}
+/*.task1 {
+  display: grid;
+  grid-template-columns: 50px 100px 20px 300px;
+  grid-template-rows: repeat(5, 100px);
+}*/
+.task3 {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 40px 50px auto 50px 40px;
+  grid-template-rows: 25% 100px auto;
+  border: 1px solid black;
+}
+.content {
+  border: 1px solid black;
+}
+.task4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(5, 100px);
+}
+.container1 {
+  display: grid;
+  grid-template-columns: min-content;
+}
+.container2 {
+  display: grid;
+  grid-template-columns: max-content;
+}
+.container3 {
+  display: grid;
+  grid-template-columns: 100px min-content min-content min-content 50px;
+}
+.container3 > div {
+  padding: 5px;
+  border: 1px solid black;
+}
+.container4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5px, 1fr));
+}
+.container4 > div {
+  border: 1px solid black;
+}
+.img {
+  grid-area: img;
+}
+.title {
+  grid-area: title;
+}
+.price {
+  grid-area: price;
+}
+.location {
+  grid-area: location;
+}
+.underground {
+  grid-area: underground;
+}
+.text {
+  grid-area: text;
+}
+.emoji {
+  grid-area: emoji;
+}
+.date {
+  grid-area: date;
+}
+.container5 {
+  border: 1px solid black;
+  display: grid;
+  grid-template-areas:
+    "img title price"
+    "img location ."
+    "img underground ."
+    "img text emoji"
+    "img date .";
+  grid-template-columns: min-content 0.3fr 0.2fr;
+  column-gap: 20px;
+}
+.container6 {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.container6 > div {
+  border: 1px solid black;
+}
+.divA{
+  background: rgb(104, 154, 219);
+}
+.divB {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background: green;
+}
+.divC{
+  background: ;
+}
