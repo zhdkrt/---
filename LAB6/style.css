@@ -14,6 +14,9 @@ ul {
   justify-content: space-between;
   list-style-type: none;
 }
+.firstLi {
+  width: 33px;
+}
 a {
   color: rgb(87, 78, 86);
   font-family: Roboto;
