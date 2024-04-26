@@ -256,7 +256,6 @@ header {
   display: grid;
   grid-template-columns: repeat(3, minmax(min-content, 391px));
 }
-
 .table-item {
   padding: 45px 145px 38px 48px;
   height: 176px;
@@ -297,11 +296,13 @@ header {
   text-align: left;
 }
 .main-team {
-  z-index: 2;
   padding-bottom: 592px;
-  position: relative;
   padding-top: 92px;
   background: rgb(40, 41, 62);
+}
+.main {
+  position: relative;
+  z-index: 2;
 }
 .main-team__title {
   text-transform: uppercase;
@@ -366,8 +367,11 @@ header {
     "title img"
     "text img"
     "btn img";
-  top: 3050px;
-  left: 19vw;
+  bottom: -100px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   position: absolute;
   width: 1170px;
   height: 544px;
@@ -418,7 +422,7 @@ header {
 .footer {
   background: rgb(253, 240, 233);
   position: relative;
-  z-index: 3;
+  z-index: 1;
   padding-top: 250px;
 }
 .footer-info {
