@@ -30,7 +30,7 @@ header {
   display: flex;
   height: 48px;
   align-self: center;
-  color: #fff;     
+  color: #fff;
   font-family: Epilogue;
   font-size: 24px;
   font-weight: 400;
@@ -355,13 +355,34 @@ header {
   justify-content: center;
   gap: 30px;
 }
-.representatives__item > img {
-  padding: 24px 0 0 0;
+.img-box {
+  display: flex;
+  width: 270px;
+  height: 272px;
   box-sizing: border-box;
   border: 1px solid rgb(58, 60, 86);
   border-radius: 6px;
-  width: 270px;
-  height: 272px;
+  justify-content: center;
+  align-items: end;
+}
+.img-box__picture-1 {
+  width: 196px;
+  height: 247px;
+}
+
+.img-box__picture-2 {
+  width: 259px;
+  height: 232px;
+}
+
+.img-box__picture-3 {
+  width: 205px;
+  height: 238px;
+}
+
+.img-box__picture-4 {
+  width: 230px;
+  height: 233px;
 }
 .main-help {
   display: grid;
@@ -588,9 +609,11 @@ header {
   .main-features__box-text {
     font-size: 2vw;
   }
-  .representatives__item > img {
-    width: 150px;
-    height: 200px;
+  .representatives {
+    margin-top: 64px;
+    grid-template-columns: min-content min-content;
+    grid-template-rows: min-content min-content;
+    gap: 5px;
   }
   .main-team__title {
     padding-left: 5vw;
@@ -626,9 +649,6 @@ header {
   .main-help__image {
     align-self: center;
     width: 25vw;
-  }
-  .representatives {
-    gap: 5px;
   }
   .copyright__info {
     gap: 2vw;
@@ -745,6 +765,7 @@ header {
       "btn";
     padding: 50px 0;
     justify-content: start;
+    height: auto;
   }
   .main-help__title {
     text-align: center;
@@ -807,5 +828,28 @@ header {
   }
   .table {
     padding-top: 50px;
+  }
+  .footer-info {
+    grid-template-areas:
+      "title"
+      "mt"
+      "mi"
+      "st"
+      "si"
+      "sg";
+    justify-content: center;
+    text-align: center;
+  }
+  .footer__title {
+    text-align: center;
+  }
+  .copyright {
+    grid-template-columns: none;
+    grid-template-rows: repeat(3, min-content);
+    justify-content: center;
+    padding: 0;
+  }
+  .copyright__text {
+    width: 75vw;
   }
 }
