@@ -7,14 +7,14 @@ body {
   overflow-x: hidden;
 }
 .container {
-  max-width: calc(100vw-135px);
+  width: calc(100vw - 135px * 2);
   margin: 0 auto;
 }
 header {
   background: rgb(40, 41, 62);
 }
 .navbar {
-  padding: 27px 19vw;
+  padding: 27px 0;
   display: grid;
   grid-template-columns: min-content minmax(min-content, 515px) min-content;
   justify-content: space-between;
@@ -82,13 +82,13 @@ header {
   text-transform: uppercase;
 }
 .main-poster {
-  padding-top: 104px;
   display: grid;
   grid-template-rows: min-content;
   background: rgb(40, 41, 62);
   padding-bottom: 70px;
 }
 .main-poster__title {
+  margin-top: 104px;
   color: rgb(255, 255, 255);
   font-family: Epilogue;
   font-size: 72px;
@@ -109,9 +109,8 @@ header {
   margin: 0 auto;
 }
 .main-about__title {
-  padding-top: 80px;
-  padding-left: 19vw;
-  padding-bottom: 34px;
+  margin-top: 80px;
+  margin-bottom: 34px;
   color: rgb(239, 109, 88);
   font-family: Epilogue;
   font-size: 16px;
@@ -124,7 +123,7 @@ header {
 .main-about__content {
   display: grid;
   grid-template-columns: minmax(min-content, 417px) minmax(min-content, 570px);
-  justify-content: center;
+  justify-content: space-between;
   gap: 10vw;
 }
 .main-about__text {
@@ -149,7 +148,7 @@ header {
   justify-content: center;
   gap: 30px;
   display: grid;
-  padding-top: 127px;
+  margin-top: 127px;
   grid-template-areas:
     "video img_1 img_2"
     "video img_3 img_4";
@@ -157,9 +156,12 @@ header {
 .main-about__video {
   border-radius: 6px;
   background: rgb(92, 32, 0);
-  width: 570px;
-  height: 448px;
+  width: 47vw;
+  height: 100%;
   grid-area: video;
+}
+.main-about__pictures > img {
+  width: 17.5vw;
 }
 .main-about__picture1 {
   grid-area: img_1;
@@ -176,17 +178,16 @@ header {
 .main-feature {
   row-gap: 12px;
   column-gap: 130px;
-  justify-content: center;
+  justify-content: space-between;
   display: grid;
-  padding-top: 192px;
+  margin-top: 192px;
+  margin-bottom: 128px;
   grid-template-areas:
     "title box"
     "bt box"
     "st box";
 }
-.main-features {
-  padding-bottom: 128px;
-}
+
 .main-features__title {
   grid-area: title;
   color: rgb(239, 109, 88);
@@ -226,14 +227,24 @@ header {
   width: 370px;
 }
 .main-features__box {
-  text-align: center;
+  padding-left: 48px;
+  padding-right: 48px;
   max-width: 336px;
   height: 272px;
   box-sizing: border-box;
   border: 1px solid rgb(243, 209, 191);
-  border-radius: 6px 6px 0px 6px;
   box-shadow: 0px 32px 64px 0px rgba(57, 20, 0, 0.04);
   background: rgb(255, 255, 255);
+}
+.main-features__box-1 {
+  border-radius: 6px 0px 0px 6px;
+}
+
+.main-features__box-2 {
+  border-radius: 0px 6px 6px 0px;
+}
+.main-features__box:hover {
+  background: rgb(253, 240, 233);
 }
 .main-features__box-title {
   padding-top: 105px;
@@ -243,8 +254,10 @@ header {
   font-weight: 700;
   line-height: 32px;
   letter-spacing: 0px;
+  text-align: left;
 }
 .main-features__box-text {
+  text-align: left;
   color: rgba(57, 20, 0, 0.64);
   font-family: Epilogue;
   font-size: 16px;
@@ -254,9 +267,9 @@ header {
 }
 .table {
   justify-content: center;
-  padding-top: 144px;
   display: grid;
-  grid-template-columns: repeat(3, minmax(min-content, 391px));
+  grid-template-columns: repeat(3, minmax(min-content, 35vw));
+  margin-bottom: 128px;
 }
 .table-item {
   padding: 45px 145px 38px 48px;
@@ -264,12 +277,11 @@ header {
   box-sizing: border-box;
   border: 1px solid rgb(243, 209, 191);
 }
-.table-item_color {
+.table-item_center {
   border-radius: 0;
   padding: 45px 145px 38px 48px;
   box-sizing: border-box;
   border: 1px solid rgb(243, 209, 191);
-  background: rgb(253, 240, 233);
   height: 176px;
 }
 .table-item_left {
@@ -277,6 +289,9 @@ header {
 }
 .table-item_right {
   border-radius: 0px 6px 6px 0px;
+}
+.table-item:hover {
+  background: rgb(253, 240, 233);
 }
 .table-item__title {
   color: rgb(57, 20, 0);
@@ -316,11 +331,10 @@ header {
   letter-spacing: 3px;
   text-align: left;
   text-transform: uppercase;
-  padding-left: 19vw;
 }
 .main-team__description {
+  margin-top: 20px;
   display: block;
-  padding-left: 19vw;
   color: rgb(255, 255, 255);
   font-family: Epilogue;
   font-size: 56px;
@@ -350,15 +364,16 @@ header {
   text-align: left;
 }
 .representatives {
+  margin-top: 64px;
   display: grid;
   grid-template-columns: repeat(4, min-content);
-  justify-content: center;
+  justify-content: space-between;
   gap: 30px;
 }
 .img-box {
   display: flex;
-  width: 270px;
-  height: 272px;
+  width: 20vw;
+  height: 400px;
   box-sizing: border-box;
   border: 1px solid rgb(58, 60, 86);
   border-radius: 6px;
@@ -366,23 +381,23 @@ header {
   align-items: end;
 }
 .img-box__picture-1 {
-  width: 196px;
-  height: 247px;
+  width: auto;
+  height: auto;
 }
 
 .img-box__picture-2 {
-  width: 259px;
-  height: 232px;
+  width: auto;
+  height: auto;
 }
 
 .img-box__picture-3 {
-  width: 205px;
-  height: 238px;
+  width: auto;
+  height: auto;
 }
 
 .img-box__picture-4 {
-  width: 230px;
-  height: 233px;
+  width: auto;
+  height: auto;
 }
 .main-help {
   display: grid;
@@ -396,7 +411,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   position: absolute;
-  width: 1170px;
+  width: calc(100vw - 135px * 2);
   height: 544px;
   border-radius: 6px;
   background: rgb(239, 109, 88);
@@ -449,7 +464,6 @@ header {
   padding-top: 250px;
 }
 .footer-info {
-  padding: 0 19vw;
   justify-content: space-between;
   display: grid;
   grid-template-areas:
@@ -457,10 +471,11 @@ header {
     ". mi si .";
 }
 .line {
-  margin: 68px 19vw 43px;
-  background: #000;
-  height: 1px;
-  width: 62vw;
+  margin-top: 68px;
+  margin-bottom: 43px;
+  background: rgb(243, 209, 191);
+  height: 2px;
+  width: 100%;
 }
 .footer-menu__title,
 .footer-service__title {
@@ -541,7 +556,7 @@ header {
   display: grid;
   grid-template-columns: repeat(2, max-content);
   justify-content: space-between;
-  padding: 0 19vw 52px;
+  padding-bottom: 52px;
 }
 .text {
   color: rgb(57, 20, 0);
