@@ -7,7 +7,7 @@ body {
   overflow-x: hidden;
 }
 .container {
-  width: calc(100vw - 135px * 2);
+  max-width: calc(100vw - 135px * 2);
   margin: 0 auto;
 }
 header {
@@ -710,7 +710,7 @@ header {
 @media (max-width: 576px) {
   .main-about__content {
     grid-template-columns: none;
-    grid-template-rows: 2;
+    grid-template-rows: repeat(2, max-content);
   }
   .main-about__text {
     width: 75vw;
@@ -725,7 +725,7 @@ header {
   }
   .representatives {
     grid-template-columns: none;
-    grid-template-rows: 4;
+    grid-template-rows: repeat(4, max-content);
     align-self: center;
   }
   .representatives__item {
@@ -866,5 +866,15 @@ header {
   }
   .copyright__text {
     width: 75vw;
+  }
+  .footer {
+    padding-top: 150px;
+  }
+  .img-box {
+    width: 50vw;
+    height: 300px;
+  }
+  .container {
+    max-width: calc(100vw - 25px * 2);
   }
 }

@@ -76,6 +76,7 @@ body {
   grid-area: date;
 }
 .container5 {
+  width: 1000px;
   border: 1px solid black;
   display: grid;
   grid-template-areas:
@@ -85,15 +86,15 @@ body {
     "img text emoji"
     "img date .";
 
-  grid-template-columns: min-content 0.3fr 0.2fr;
+  grid-template-columns: min-content 1fr 1fr;
   column-gap: 20px;
 }
 
 .container6 {
   display: grid;
   gap: 10px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: [col1] 1fr [col2] 1fr [col3] 1fr [col4] 1fr;
+  grid-template-rows: [row1] 100px [row2] 100px [row3] 100px;
 }
 .container6 > div {
   text-align: center;
@@ -102,21 +103,25 @@ body {
   border: 1px solid black;
 }
 .divA {
+  grid-column-start: col3;
   background: rgb(104, 154, 219);
 }
 .divB {
+  grid-column-start: col4;
   background: orange;
 }
-.divE {
+.divC {
+  grid-column-start: 1;
   grid-row-start: 1;
-  grid-row-end: 3;
-  grid-column-start: 2;
-  grid-column-end: 3;
   background: green;
 }
-.divC {
-  grid-row-start: 1;
-  grid-column-start: 1;
+.divD {
+  grid-column-start: col1;
+  grid-row-start: row2;
+}
+.divE {
+  grid-column-start: col2;
+  grid-row: row1 / row3;
   background: green;
 }
 .divJ {
