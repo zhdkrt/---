@@ -1,0 +1,163 @@
+@import "_vars";
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+.container {
+  max-width: 100vw;
+  margin: 0 auto;
+}
+.navbar {
+  padding: $navbar-padding;
+  display: flex;
+  justify-content: space-evenly;
+}
+.logo {
+  align-self: center;
+  color: $primary-color;
+  font-family: $font-family-primary;
+  font-size: $font-size-logo;
+  font-weight: $font-weight-logo;
+  line-height: $line-height-logo;
+  letter-spacing: $letter-spacing-heading;
+}
+.navbar-menu__item-link {
+  text-decoration: none;
+  color: $primary-color;
+  font-family: $font-family-secondary;
+  font-size: $font-size-navbar;
+  font-weight: $font-weight-navbar;
+  line-height: $line-height-navbar;
+  letter-spacing: $letter-spacing-navbar;
+  text-align: left;
+}
+.navbar-menu {
+  display: flex;
+  justify-content: space-between;
+  gap: $navbar-menu-gap;
+  align-items: center;
+}
+.navbar-menu__item {
+  list-style-type: none;
+}
+button {
+  padding: $button-padding;
+  border-radius: $button-border-radius;
+  background: $secondary-color;
+  border: none;
+  text-align: center;
+  color: $button-text-color;
+  font-family: $font-family-secondary;
+  font-size: $button-font-size;
+  font-weight: $button-font-weight;
+  line-height: $button-font-height;
+  text-align: left;
+}
+.button_big {
+  margin-left: $button-big-margin-left;
+  padding: $button-big-padding;
+}
+.main-poster {
+  background: $main-poster-background;
+  height: 100vh;
+  background-size: 100vw;
+  background-repeat: no-repeat;
+}
+.main-poster__title {
+  padding: $main-poster-title-padding;
+  max-width: 804px;
+  color: $main-poster-text-color;
+  font-family: $font-family-tertiary;
+  font-size: $main-poster-title-font-size;
+  font-weight: $main-poster-title-font-weight;
+  line-height: $main-poster-title-line-height;
+  text-align: left;
+}
+.main-poster__description {
+  opacity: 0.6;
+  max-width: 458px;
+  padding-left: $main-poster-description-padding-left;
+  padding-bottom: $main-poster-description-padding-bottom;
+  color: $main-poster-description-text-color;
+  font-family: $font-family-secondary;
+  font-size: $main-poster-description-font-size;
+  font-weight: $main-poster-description-font-weight;
+  line-height: $main-poster-description-line-height;
+  text-align: left;
+}
+.main-poster__button {
+  border-radius: $button-border-radius;
+  background: $secondary-color;
+  border: none;
+  margin-left: 230px;
+}
+.text-content__title {
+  padding-top: $text-content-title-padding-top;
+  padding-bottom: $text-content-title-padding-bottom;
+  text-align: center;
+  color: $primary-color;
+  font-family: $font-family-tertiary;
+  font-size: $text-content-title-font-size;
+  font-weight: $text-content-title-font-size;
+  line-height: $text-content-title-line-height;
+}
+.text-content__description {
+  width: 100vw;
+  color: $primary-color;
+  font-family: $font-family-secondary;
+  font-size: $text-content-description-font-size;
+  font-weight: $text-content-description-font-weight;
+  line-height: $text-content-description-line-height;
+  text-align: center;
+}
+.content {
+  padding: $content-padding;
+  display: flex;
+  justify-content: center;
+  gap: $content-gap;
+  flex-wrap: wrap;
+}
+.card {
+  box-sizing: border-box;
+  border: $card-border;
+  border-radius: $card-border-radius;
+  background: $card-background;
+  width: 360px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.card_hover:hover {
+  box-sizing: border-box;
+  width: 360px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: $card-hover-box-shadow;
+}
+.card__info-description {
+  color: $primary-color;
+  font-family: $font-family-secondary;
+  font-size: $card-font-size;
+  font-weight: $card-font-weight;
+  line-height: $card-font-height;
+  text-align: center;
+  width: 100%;
+}
+.card__info-title {
+  color: $card-text-color;
+  font-family: $font-family-tertiary;
+  font-size: $card-title-font-size;
+  font-weight: $card-title-font-weight;
+  line-height: $card-title-line-height;
+  text-align: center;
+  padding-top: $card-title-padding-top;
+}
+footer {
+  background: $footer-background;
+  padding: $footer-padding;
+}
