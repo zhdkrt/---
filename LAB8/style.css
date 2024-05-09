@@ -81,15 +81,14 @@ body {
   display: grid;
   grid-template-areas:
     "img title price"
-    "img location ."
+    "img location date"
     "img underground ."
     "img text emoji"
-    "img date .";
+    "img . .";
 
   grid-template-columns: min-content 1fr 1fr;
   column-gap: 20px;
 }
-
 .container6 {
   display: grid;
   gap: 10px;
@@ -103,21 +102,15 @@ body {
   border: 1px solid black;
 }
 .divA {
-  grid-column-start: col3;
   background: rgb(104, 154, 219);
 }
 .divB {
-  grid-column-start: col4;
   background: orange;
 }
 .divC {
   grid-column-start: 1;
   grid-row-start: 1;
   background: green;
-}
-.divD {
-  grid-column-start: col1;
-  grid-row-start: row2;
 }
 .divE {
   grid-column-start: col2;
@@ -151,7 +144,7 @@ body {
 }
 
 .C {
-  grid-column-start: span 1;
+  grid-column-start: 1;
 }
 
 .D {
