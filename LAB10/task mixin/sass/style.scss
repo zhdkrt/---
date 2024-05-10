@@ -16,22 +16,22 @@
   width: $width;
 }
 
-// .first {
-//   @include red;
-// }
-// .second {
-//   @include blue;
-// }
-// .third {
-//   @include green;
-// }
+.first {
+  @include red;
+}
+.second {
+  @include blue;
+}
+.third {
+  @include green;
+}
 
-// .first,
-// .second,
-// .third {
-//   @include h(200px);
-//   @include w(200px);
-// }
+.first,
+.second,
+.third {
+  @include h(200px);
+  @include w(200px);
+}
 
 $i: 1;
 
@@ -41,5 +41,3 @@ $i: 1;
   }
   $i: $i + 1;
 }
-
-
