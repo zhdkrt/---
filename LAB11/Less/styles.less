@@ -1,5 +1,11 @@
-@color: #ffff00;
+@color: rgb(0, 255, 0);
+@color-dark: darken(@color, 25%);
+@color-light: lighten(@color, 25%);
 
-p {
-  color: @color;
+a {
+  color: @color-dark;
+
+  &:hover {
+    color: @color-light;
+  }
 }
