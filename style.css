@@ -1,0 +1,12 @@
+.animate__animated.animate__bounce {
+  --animate-duration: 5s;
+}
+h4 {
+  font-size: 32px;
+}
+.animate__animated.animate__backOutDown {
+  --animate-duration: 10s;
+}
+.animate__animated.animate__fadeOut {
+  --animate-duration: 800ms;
+}
